@@ -24,7 +24,7 @@ Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a id
 - Importe o arquivo InsomniaGS1.json para o Insomnia
 
 ### Execução
-Após a importação do arquivo InsomniaGS1.json e a configuração do application.properties, o usuario pode rodar o Sprint2JavaApplication dentro do projeto java.
+Após a importação do arquivo InsomniaGS1.json e a configuração do application.properties, o usuario pode rodar o GlobalSolutionJavaApplication dentro do projeto java.
 ![Execução](https://github.com/diegohs13/GS_JAVA/blob/main/runGs.png)
 ![Execução completa](https://github.com/diegohs13/GS_JAVA/blob/main/runGs2.png)
 
