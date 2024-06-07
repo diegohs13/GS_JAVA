@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.springframework.hateoas.RepresentationModel;
 
 @Table(name = "TB_RELATORIO")
@@ -16,6 +17,7 @@ import org.springframework.hateoas.RepresentationModel;
 public class Relatorio extends RepresentationModel<Relatorio>{
 
     @Id
+    @NotNull()
     private String id_relatorio;
 
     private String data_relatorio;
