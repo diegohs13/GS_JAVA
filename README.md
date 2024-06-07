@@ -1,5 +1,6 @@
 # Easy Tech
-Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a identificação de pontos de poluição, mas também incluindo recursos de conscientização pública e denúncia de incidentes. Através de gráficos e mapas interativos, os usuários poderão visualizar claramente as áreas mais afetadas pela poluição, incentivando ações proativas para limpeza e prevenção.## Integrantes
+Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a identificação de pontos de poluição, mas também incluindo recursos de conscientização pública e denúncia de incidentes. Através de gráficos e mapas interativos, os usuários poderão visualizar claramente as áreas mais afetadas pela poluição, incentivando ações proativas para limpeza e prevenção.
+## Integrantes
 
 - MATHEUS MATOS - RM:99792
 - KAREN VITORIA JESUS DA SILVA - RM:99468
@@ -11,20 +12,21 @@ Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a id
 
 ### Configuração do Spring
 - site: https://start.spring.io/
-  ![Configuração Spring](link)
+  ![Configuração Spring](https://github.com/diegohs13/GS_JAVA/blob/main/configSpringGs.png)
 - application.properties
-  ![Configuração application.properties](link)
+  ![Configuração application.properties](https://github.com/diegohs13/GS_JAVA/blob/main/appProp.png)
 
 ### Import insominia
 - insomnia v4
 - Importar arquivo
-  ![Importar arquivo](link)
-  ![Import completo](link)
+  ![Importar arquivo](https://github.com/diegohs13/GS_JAVA/blob/main/importInsomnia.png)
+  ![Import completo](https://github.com/diegohs13/GS_JAVA/blob/main/importCompleto.png)
 - Importe o arquivo InsomniaSP2.json para o Insomnia
 
 ### Execução
 Após a importação do arquivo InsomniaSP2.json e a configuração do application.properties, o usuario pode rodar o Sprint2JavaApplication dentro do projeto java.
-![Execução](link)
+![Execução](https://github.com/diegohs13/GS_JAVA/blob/main/runGs.png)
+![Execução completa](https://github.com/diegohs13/GS_JAVA/blob/main/runGs2.png)
 
 ### Utilização
 O usuario pode cadastrar os seguintes dados no sistema utilizando o metodo POST:
@@ -65,7 +67,7 @@ O usuario tambem pode realizar o login no sistema com os seguintes dados utiliza
 - senha
 
 ## Endpoints
-PACIENTES
+USUARIOS
 - GET `/usuarios` - Retorna a lista de usuarios cadastrados no sistema.
 - POST `/usuarios` - Cadastra um novo usuario no sistema.
 - GET `/usuarios/{id}` - Retorna os dados de um usuario específico.
@@ -73,21 +75,21 @@ PACIENTES
 - DELETE `/usuarios/{id}` - Deleta um usuario específico.
 - POST `/usuarios/{id}/login` - Realiza o login de um usuario no sistema.
 
-EXAMES
+RELATORIOS
 - GET `/relatorios` - Retorna a lista de exames relatorios no sistema.
 - GET `/relatorios/{id}` - Retorna os dados de um relatorio específico.
 - PUT `/relatorios/{id}/atualizarDescricao` - Atualiza a descrição de um relatorio específico.
 - DELETE `/relatorios/{id}` - Deleta um relatorio específico.
 - POST `/relatorios` - Cadastra um novo relatorio no sistema.
 
-RECEITAS
+LOCALIDADES
 - GET `/Localidades` - Retorna a lista de Localidades cadastradas no sistema.
 - GET `/Localidades/{id}` - Retorna os dados de uma Localidade específica.
 - PUT `/Localidades/{id}/atualizarNome` - Atualiza o nome de uma Localidade específica.
 - DELETE `/Localidades/{id}` - Deleta uma Localidade específica.
 - POST `/Localidades` - Cadastra uma nova Localidade no sistema.
 
-UNIDADES
+INTERVENCOES
 - GET `/intervencoes` - Retorna a lista de intervencoes cadastradas no sistema.
 - GET `/intervencoes/{id}` - Retorna os dados de uma intervencao específica.
 - PUT `/intervencoes/{id}/atualizarResiduos` - Atualiza a quantidade de residuos de uma intervencao específica.
@@ -95,7 +97,7 @@ UNIDADES
 - POST `/intervencoes` - Cadastra uma nova intervencao no sistema.
 
 
-CONSULTAS
+DENUNCIAS
 - GET `/denuncias` - Retorna a lista de denuncias cadastradas no sistema.
 - GET `/denuncias/{id}` - Retorna os dados de uma denuncia específica.
 - PUT `/denuncias/{id}/atualizarDescricao` - Atualiza a descrição de uma denuncia específica.
@@ -103,7 +105,7 @@ CONSULTAS
 - POST `/denuncias` - Cadastra uma nova denuncia no sistema.
 
 
-AGENDAMENTOS
+CONSCIENTIZACOES
 - GET `/conscientizacoes` - Retorna a lista de conscientizacoes cadastrados no sistema.
 - GET `/conscientizacoes/{id}` - Retorna os dados de uma conscientizacao específica.
 - PUT `/conscientizacoes/{id}/atualizarDescricao` - Atualiza a descricao conscientizacao específica.
@@ -112,67 +114,55 @@ AGENDAMENTOS
 
 
 ## Imagens
-![Diagrama de relacionamentos](link)
+![Diagrama de relacionamentos](https://github.com/diegohs13/GS_JAVA/blob/main/bdRelation.png)
 - _**Entidades e Atributos**_<br>
   <br>
 
-- **Paciente**
-- cpf (chave primária)
-- nome_completo
-- data_nasc
-- end_paciente
-- tel_paciente
-- email_paciente<br>
+- **Usuario**
+- id_usuario (chave primária)
+- nome
+- email
+- senha
+- tipo_usuario<br>
   <br>
 
-- **Clínica**
-- cnpj (chave primária)
-- nome_clinica
-- cel_clinica
-- conveniada<br>
+- **Relatoeio**
+- id_relatorio (chave primária)
+- data_relatorio
+- descricao
+- quantidade_residuo
+- Usuario_id_usuario (chave estrangeira)<br>
   <br>
 
-- **Consulta**
-- id_consulta (chave primária)
-- data_hora_consulta
-- idClinica (chave estrangeira)
-- idPaciente (chave estrangeira)
-- idAgendamento (chave estrangeira)<br>
+- **Localidade**
+- id_local (chave primária)
+- nome_local
+- latitude 
+- longitude 
+- Relatorio_id_relatorio (chave estrangeira)<br>
   <br>
 
-- **Exames**
-- idExame (chave primária)
-- idConsulta (chave estrangeira)
-- tipo_exame
-- resultado<br>
+- **Intervencoes**
+- id_intervencao (chave primária)
+- data_intervencao 
+- quantidade_residuos
+- numero_pessoas
+- Localidade_id_localidade (chave estrangeira)<br>
   <br>
 
-- **Agendamento**
-- n_protocolo (chave primária)
-- idPaciente (chave estrangeira)
-- dataHora_agendamento
-- clinica_agendamento<br>
-  <br>
-  <br>
-
-- **_Relacionamentos_**<br>
+- **Denuncia**
+- id_denuncia (chave primária)
+- data_denuncia 
+- descricao
+- status
+- Usuario_id_usuario (chave estrangeira)<br>
   <br>
 
-- **Paciente para Consulta**
-- Um paciente pode ter várias consultas.
-- Uma consulta é específica de um paciente.<br>
+- **Conscienizacao**
+- id_campanha (chave primária)
+- titulo_campanha
+- descricao
+- data_inicio
+- data_fim<br>
   <br>
-
-- **Paciente para Agendamento**
-- Um paciente pode ter vários agendamentos.
-- Um agendamento é específico de um paciente.<br>
-  <br>
-
-- **Consulta para Exames**
-- Uma consulta pode ter vários exames associados.
-- Um exame é específico de uma consulta.<br>
-  <br>
-
-- **Clínica para Consulta**
-- Uma clínica pode hospedar várias consultas.
-- Uma consulta acontece em uma clínica.<br>
+<br>
