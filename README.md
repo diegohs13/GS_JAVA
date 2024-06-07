@@ -14,7 +14,7 @@ Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a id
 - site: https://start.spring.io/
   ![Configuração Spring](https://github.com/diegohs13/GS_JAVA/blob/main/configSpringGs.png)
 - application.properties
-  ![Configuração application.properties](https://github.com/diegohs13/GS_JAVA/blob/main/appProp.png)
+  ![Configuração application.properties](https://github.com/diegohs13/GS_JAVA/blob/main/appProperties.png)
 
 ### Import insominia
 - insomnia v4
