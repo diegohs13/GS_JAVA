@@ -21,10 +21,10 @@ Nossa plataforma será uma ferramenta multifuncional, abordando não apenas a id
 - Importar arquivo
   ![Importar arquivo](https://github.com/diegohs13/GS_JAVA/blob/main/importInsomnia.png)
   ![Import completo](https://github.com/diegohs13/GS_JAVA/blob/main/importCompleto.png)
-- Importe o arquivo InsomniaSP2.json para o Insomnia
+- Importe o arquivo InsomniaGS1.json para o Insomnia
 
 ### Execução
-Após a importação do arquivo InsomniaSP2.json e a configuração do application.properties, o usuario pode rodar o Sprint2JavaApplication dentro do projeto java.
+Após a importação do arquivo InsomniaGS1.json e a configuração do application.properties, o usuario pode rodar o Sprint2JavaApplication dentro do projeto java.
 ![Execução](https://github.com/diegohs13/GS_JAVA/blob/main/runGs.png)
 ![Execução completa](https://github.com/diegohs13/GS_JAVA/blob/main/runGs2.png)
 
@@ -166,3 +166,30 @@ CONSCIENTIZACOES
 - data_fim<br>
   <br>
 <br>
+### Proposta de projeto
+
+**Enfrentando a Poluição nos Oceanos:** Uma Abordagem Inovadora
+<br>
+<br>
+**O oceano carrega consigo um fardo alarmante:** cerca de 2.3 milhões de toneladas de plástico flutuam em suas águas, com o Brasil contribuindo com impressionantes 325 mil toneladas anualmente. Esta é uma carga que não só afeta a vida marinha, mas também causa impacto direto nas comunidades costeiras e no delicado equilíbrio dos ecossistemas marinhos.
+Neste contexto, surge uma oportunidade crucial de aplicar tecnologia para monitorar e combater essa poluição, auxiliando organizações não governamentais (ONGs) e outras entidades dedicadas à proteção dos oceanos. Nosso projeto visa criar uma aplicação inovadora capaz de mapear os pontos críticos de poluição nas praias, simplificando assim o trabalho das ONGs no recolhimento desses materiais.
+<br>
+<br>
+**Desafios e Oportunidades Atuais:** Ao observar fontes de avaliação como relatos em mídias sociais e plataformas de denúncia, fica evidente a extensão do problema da poluição nos oceanos. A dificuldade em localizar e remover os resíduos plásticos é um desafio significativo enfrentado pelas ONGs e voluntários, tornando o processo de limpeza lento e ineficiente.
+<br>
+<br>
+**Proposta de Valor:** Como ponto de partida, nossa iniciativa se concentrará na localidade de Santos, um exemplo emblemático da urgência em lidar com a poluição nos oceanos. Propomos desenvolver uma plataforma abrangente que melhore significativamente a monitoração e a ação contra a poluição por plásticos. Ao receber relatórios de poluição de diversas fontes, como cidadãos preocupados ou patrulhas costeiras, nossa aplicação irá mapear e visualizar os locais com maior concentração de plásticos, facilitando assim a intervenção das equipes de limpeza. Além disso, nossa plataforma fornecerá dados sobre a quantidade de resíduos em cada localidade, permitindo uma alocação mais eficiente de recursos e facilitar na estimativa do número de pessoas necessárias para a limpeza.
+<br>
+<br>
+**Recursos-Chave:**
+- **Identificação de Pontos Críticos:** Utilizando tecnologias avançadas, nossa plataforma identificará e mapeará áreas com alta concentração de plásticos, incluindo aquelas próximas a indústrias e centros urbanos.
+- **Conscientização Pública:** Além de fornecer dados sobre poluição, nossa plataforma educará o público sobre os impactos ambientais do plástico nos oceanos e incentivará práticas mais sustentáveis.
+- **Disk Denúncia:** Implementaremos um sistema de denúncia integrado, permitindo que os usuários relatem incidentes de poluição de forma rápida e eficaz, contribuindo para uma resposta mais ágil das autoridades competentes.
+- **Visualização de Dados:** Gráficos e mapas interativos fornecerão uma visão clara das áreas mais afetadas pela poluição, facilitando o planejamento e a execução de ações de limpeza.
+
+  <br>
+<br>**Benefícios:** Nossa plataforma oferece benefícios significativos para diversas partes interessadas. Para as comunidades costeiras, proporciona uma ferramenta eficaz para monitorar e combater a poluição, protegendo ecossistemas e fontes de subsistência. Para as autoridades e ONGs, simplifica e agiliza o processo de resposta a incidentes de poluição, permitindo uma gestão mais eficiente dos recursos.
+Em suma, nossa plataforma representa um passo importante na luta contra a poluição nos oceanos, oferecendo uma abordagem abrangente e tecnologicamente avançada para proteger nossos preciosos recursos marinhos.
+Benefícios para a Comunidade e o Meio Ambiente:Ao adotar essa abordagem inovadora, nossa plataforma oferece benefícios tangíveis para a comunidade e o meio ambiente. Para os cidadãos, a aplicação proporciona uma maneira fácil e eficaz de relatar e lidar com a poluição nas praias, promovendo um senso de responsabilidade ambiental e engajamento comunitário. Para as ONGs e voluntários, nossa plataforma simplifica e agiliza o processo de limpeza, permitindo uma resposta mais rápida e eficiente aos incidentes de poluição.
+Crescimento e Impacto Sustentável:Empresas que adotam essa abordagem têm potencial para crescer rapidamente em um mercado que valoriza soluções inovadoras para problemas ambientais urgentes. Além disso, ao promover a conscientização e ações práticas para combater a poluição nos oceanos, nossa plataforma tem o potencial de gerar um impacto positivo duradouro no meio ambiente e na qualidade de vida das comunidades costeiras.
+Em resumo, nossa aplicação oferece uma abordagem inovadora e eficaz para enfrentar o problema da poluição nos oceanos, fornecendo uma ferramenta poderosa para comunidades, ONGs e outras entidades comprometidas com a proteção dos nossos preciosos recursos marinhos.

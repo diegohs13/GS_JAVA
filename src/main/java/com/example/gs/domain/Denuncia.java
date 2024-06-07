@@ -1,7 +1,6 @@
 package com.example.gs.domain;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
@@ -17,7 +16,6 @@ import org.springframework.hateoas.RepresentationModel;
 public class Denuncia extends RepresentationModel<Denuncia>{
 
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private String id_denuncia;
 
     private String data_denuncia;
